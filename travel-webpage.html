@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover the Mambilla Plateau | Taraba State, Nigeria</title>
+    <style>
+      /* 1. Styling the whole page (the body) */
+      body {
+        font-family: Arial, sans-serif; /* A simple, standard font */
+        background-color: #f0f8f5; /* A very light green background */
+        color: #333333; /* Dark gray text is easier to read than pure black */
+        margin: 0; /* Removes default browser spacing around the edge */
+        padding: 0;
+      }
+
+      /* 2. Styling the Headings */
+      h1 {
+        color: whitesmoke; /* Off-white for the main title to stand out on the dark hero background */
+      }
+      h2,
+      h3 {
+        color: #1a472a; /* Dark green for the headings */
+      }
+
+      /* 3. The Hero Section (The big banner picture at the top) */
+      .hero {
+        /* We use a linear-gradient to make the image slightly dark so white text shows up better */
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("https://upload.wikimedia.org/wikipedia/commons/f/fa/The_Mambilla_Plateau%2C_Nigeria_01.jpg");
+        background-size: cover; /* Makes the image cover the whole box */
+        text-align: center; /* Centers the text inside */
+        padding: 150px 20px; /* Adds space inside the top and bottom to make it tall */
+        color: white; /* Makes the text white */
+      }
+
+      /* 4. Simple Container to keep content from stretching too wide on big screens */
+      .container {
+        max-width: 1000px; /* The content won't get wider than 1000 pixels */
+        margin: 0 auto; /* This centers the container on the screen */
+        padding: 40px 20px; /* Adds breathing room inside the container */
+      }
+
+      /* 5. Image Gallery */
+      .gallery {
+        display: flex; /* Puts the cards side-by-side */
+        flex-wrap: wrap; /* Lets cards drop to the next line on smaller screens (like phones) */
+        gap: 20px; /* Adds space between the cards */
+      }
+
+      .card {
+        background-color: white; /* White background for the card */
+        border: 2px solid #ddd; /* A simple gray border */
+        width: 30%; /* Makes each card take up about a third of the row */
+        min-width: 250px; /* Prevents cards from getting too squished on phones */
+        padding: 15px; /* Space inside the card */
+        border-radius: 8px; /* Slightly rounded corners */
+      }
+
+      .card img {
+        width: 100%; /* Makes the image fill the width of the card */
+        height: 200px; /* Forces all images to be the same height */
+        object-fit: cover; /* Keeps the images from stretching out of proportion */
+      }
+
+      /* 6. Lists */
+      ul {
+        list-style-type: square; /* Uses standard square bullets */
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 10px; /* Adds a little space between list items */
+      }
+
+      /* 7. Buttons */
+      .btn {
+        background-color: #2d6a4f;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none; /* Removes the underline from the link */
+        font-size: 18px;
+        border-radius: 5px; /* Rounded corners for the button */
+      }
+
+      /* 8. Footer */
+      footer {
+        background-color: #081c15;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HERO SECTION: The big banner at the top -->
+    <div class="hero">
+      <h1>Mambilla Plateau</h1>
+      <p>Elevate Your Senses in Nigeria's Highland Paradise.</p>
+    </div>
+
+    <!-- MAIN CONTENT AREA -->
+    <div class="container">
+      <!-- Introduction -->
+      <h2>Welcome to the Roof of Nigeria</h2>
+      <p>
+        Step into a world above the clouds. Located in Taraba State, the
+        Mambilla Plateau is Nigeria’s best-kept secret—a sprawling expanse of
+        rolling green hills, deep valleys, and breathtaking panoramic views.
+        Averaging an elevation of 1,600 meters above sea level, the plateau
+        offers a remarkably cool, temperate climate that serves as a refreshing
+        escape from the tropical heat.
+      </p>
+      <p>
+        Here, nature remains untamed and magnificent. Whether you are seeking
+        the thrill of conquering West Africa's highest peak, the tranquility of
+        boundless tea estates, or the rich cultural heritage of the Mambilla and
+        Fulani people, this highland haven promises an unforgettable adventure.
+      </p>
+
+      <!-- Image Gallery -->
+      <h2>A Glimpse of the Plateau</h2>
+      <div class="gallery">
+        <!-- Card 1 -->
+        <div class="card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/b/bf/The_Mambilla_Plateau%2C_Nigeria_07.jpg"
+            alt="Rolling green hills of Mambilla"
+          />
+          <h3>Endless Green Valleys</h3>
+          <p>
+            Experience the mesmerizing "velvet grass" that carpets the
+            undulating landscape. Deep gorges and panoramic views await around
+            every corner.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Mambila_Plateau_of_Taraba_State.jpg"
+            alt="Mambilla Plateau landscape"
+          />
+          <h3>Pristine Environments</h3>
+          <p>
+            Breathe in the crisp, unpolluted mountain air. The unique altitude
+            creates a haven free from tropical pests, perfect for relaxation and
+            hiking.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/98/Nomads_on_Mambilla_Plateau.jpg"
+            alt="Nomads on the Plateau"
+          />
+          <h3>Rich Nomadic Culture</h3>
+          <p>
+            Encounter the pastoral beauty of cattle ranches and the traditional
+            lifestyle of the nomadic Fulani herders who share the highlands.
+          </p>
+        </div>
+      </div>
+
+      <hr style="margin: 40px 0" />
+      <!-- Simple line separator -->
+
+      <!-- Lists Section (Reusing the flex gallery class to place lists side by side) -->
+      <div class="gallery">
+        <!-- List Box 1 -->
+        <div class="card" style="width: 45%">
+          <h2>Incredible Things to See</h2>
+          <ul>
+            <li>
+              <strong>Chappal Waddi:</strong> Nigeria's highest peak at a
+              towering 2,419 meters (7,936 ft).
+            </li>
+            <li>
+              <strong>Kakara Tea Estate:</strong> Marvel at lush, terraced tea
+              farms.
+            </li>
+            <li>
+              <strong>Ndoro Waterfalls:</strong> A stunning cascade hidden
+              within the rich forest.
+            </li>
+            <li>
+              <strong>The Donga River Source:</strong> Witness the serene
+              origins of the river.
+            </li>
+            <li>
+              <strong>Apple & Strawberry Farms:</strong> Temperate fruits thrive
+              here beautifully.
+            </li>
+          </ul>
+        </div>
+
+        <!-- List Box 2 -->
+        <div class="card" style="width: 45%">
+          <h2>Must-Visit Places</h2>
+          <ul>
+            <li>
+              <strong>Gembu Town:</strong> The largest town and headquarters;
+              perfect for lodging.
+            </li>
+            <li>
+              <strong>Gashaka-Gumti National Park:</strong> Nigeria's largest
+              national park.
+            </li>
+            <li>
+              <strong>Ngel Nyaki Forest Reserve:</strong> A vital montane forest
+              ecosystem.
+            </li>
+            <li>
+              <strong>Mai Samari:</strong> Known for fear-inspiring, dramatic
+              valleys.
+            </li>
+            <li>
+              <strong>Nguroji Town:</strong> A scenic settlement providing a
+              fantastic vantage point.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <!-- Call to Action (Using inline styles here for simplicity) -->
+      <div
+        style="
+          text-align: center;
+          background-color: #e9ecef;
+          padding: 40px;
+          border-radius: 8px;
+        "
+      >
+        <h2>Ready for an Adventure?</h2>
+        <p>
+          Pack your sweaters, hiking boots, and a sense of wonder. The Mambilla
+          Plateau is calling.
+        </p>
+        <br />
+        <a href="#" class="btn">Start Planning Your Trip</a>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        &copy; 2026 Aminu Ahmadu Dzara. All rights reserved. | Discover the
+        Mambilla Plateau, Taraba State, Nigeria | A Project Celebrating the
+        Natural Beauty of the Nigerian Nation.
+      </p>
+    </footer>
+  </body>
+</html>
