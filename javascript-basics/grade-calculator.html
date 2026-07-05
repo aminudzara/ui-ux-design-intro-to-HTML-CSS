@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade Calculator</title>
+  </head>
+  <body>
+    <header>
+      <h1>Grade Calculator</h1>
+    </header>
+    <main>
+      <form id="gradeForm">
+        <label for="score">Enter your score (0-100):</label>
+        <input
+          type="number"
+          id="score"
+          name="score"
+          min="0"
+          max="100"
+          required
+        />
+        <button type="submit" id="submit">Calculate Grade</button>
+      </form>
+      <div id="result"></div>
+    </main>
+
+    <script>
+      const myForm = document.getElementById("gradeForm");
+      const myScore = document.getElementById("score");
+      const myResult = document.getElementById("result");
+      let grade;
+
+      myForm.onsubmit = function (event) {
+        event.preventDefault(); // Stops the reload
+
+        let score = parseFloat(myScore.value);
+
+        if (score >= 70 && score <= 100) {
+          grade = "A";
+        } else if (score >= 60 && score < 70) {
+          grade = "B";
+        } else if (score >= 50 && score < 60) {
+          grade = "C";
+        } else if (score >= 40 && score < 50) {
+          grade = "D";
+        } else {
+          grade = "F";
+        }
+
+        myResult.textContent = `Your grade is: ${grade}`;
+      };
+    </script>
+  </body>
+</html>
